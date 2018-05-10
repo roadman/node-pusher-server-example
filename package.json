@@ -1,0 +1,33 @@
+{
+  "name": "pusher-server-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^1.30.0",
+    "pm2": "^2.10.3",
+    "pusher": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.34",
+    "nodemon": "^1.17.4",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "start": "pm2 start src/index.js --no-daemon -i 2",
+    "start-watch": "nodemon src/index.js",
+    "debug": "node --inspect src/index.js",
+    "build-ts": "tsc -m commonjs",
+    "watch-ts": "tsc -m commonjs -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roadman/node-pusher-server-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roadman/node-pusher-server-example/issues"
+  },
+  "homepage": "https://github.com/roadman/node-pusher-server-example#readme"
+}

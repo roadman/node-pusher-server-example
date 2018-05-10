@@ -1,0 +1,9 @@
+{
+  "pusher": {
+    "appId"     : "APP_ID",
+    "key"       : "KEY",
+    "secret"    : "SECRET",
+    "cluster"   : "CLUSTER",
+    "encrypted" : true
+  }
+}
