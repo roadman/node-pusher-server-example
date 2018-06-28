@@ -11,5 +11,8 @@
                 "node_modules/*"
             ]
         }
-    }
+    },
+    "include": [
+        "index.ts"
+    ]
 }
