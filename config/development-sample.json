@@ -1,9 +1,10 @@
 {
   "pusher": {
-    "appId"     : "APP_ID",
-    "key"       : "KEY",
-    "secret"    : "SECRET",
-    "cluster"   : "CLUSTER",
-    "encrypted" : true
+    "appId"       : "",
+    "key"         : "",
+    "secret"      : "",
+    "cluster"     : "",
+    "encrypted"   : true,
+    "authEndpoint": ""
   }
 }

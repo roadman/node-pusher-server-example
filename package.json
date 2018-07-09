@@ -6,19 +6,21 @@
   "dependencies": {
     "config": "^1.30.0",
     "pm2": "^2.10.3",
-    "pusher": "^2.0.0"
+    "pusher": "^2.0.1",
+    "pusher-js": "^4.2.2"
   },
   "devDependencies": {
     "@types/config": "0.0.34",
+    "@types/node": "^10.5.2",
+    "@types/pusher-js": "^4.2.0",
     "nodemon": "^1.17.4",
     "typescript": "^2.8.3"
   },
   "scripts": {
-    "start": "pm2 start src/index.js --no-daemon -i 2",
-    "start-watch": "nodemon src/index.js",
-    "debug": "node --inspect src/index.js",
-    "build-ts": "tsc -m commonjs",
-    "watch-ts": "tsc -m commonjs -w"
+    "start"      : "NODE_ENV=development node dist/index.js",
+    "start-watch": "NODE_ENV=development nodemon dist/index.js",
+    "build-ts"   : "tsc -m commonjs",
+    "watch-ts"   : "tsc -m commonjs -w"
   },
   "repository": {
     "type": "git",

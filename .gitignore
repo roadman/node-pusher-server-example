@@ -50,3 +50,6 @@ provision/ssh
 config/development.json
 config/production.json
 config/test.json
+config/demo.json
+
+.DS_Store
